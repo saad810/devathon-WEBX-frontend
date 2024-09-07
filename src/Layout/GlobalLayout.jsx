@@ -1,13 +1,13 @@
 import React from "react";
 
 import Navbar from "../Components/navbar/NavBar";
-import Card from "../Components/Card";
+import CourseCard from "../Components/CourseCard";
 const GlobalLayout = () => {
   return (
     <div>
       <Navbar />
       <div>
-        <Card />
+        <CourseCard />
       </div>
     </div>
   );

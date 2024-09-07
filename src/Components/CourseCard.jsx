@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = () => {
+const CourseCard = () => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center">
@@ -16,4 +16,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default CourseCard;
