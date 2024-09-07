@@ -181,7 +181,9 @@ const UserProfile = () => {
                   placeholder="Permanent Address"
                 />
               </div>
-              <div className="mb-4 col-span-3">
+              
+            </div>
+            <div className="mb-4 col-span-3">
                 <label className="block text-sm font-medium text-gray-700">Gender</label>
                 <fieldset className="mt-1 flex flex-row space-x-4">
                   <div className="flex items-center">
@@ -219,13 +221,12 @@ const UserProfile = () => {
                   </div>
                 </fieldset>
               </div>
-            </div>
           </div>
 
           {/* Family Information */}
           <div className="mb-6">
             <h2 className="text-xl font-semibold mb-4">Family Information</h2>
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-3 grid-cols-2 gap-6">
               <div className="mb-4">
                 <label htmlFor="fatherName" className="block text-sm font-medium text-gray-700">Father's Name</label>
                 <input
