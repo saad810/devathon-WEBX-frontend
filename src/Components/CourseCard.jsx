@@ -15,7 +15,7 @@ const CourseCard = ({ course }) => {
         <h4 className="text-lg font-bold text-black">{course.price}</h4>
       </div>
       <hr />
-      <button className="bg-primary-700 text-white px-4 py-2 rounded-md mt-2 w-full">
+      <button className="bg-primary-700 text-white px-4 py-2 rounded-md mt-2 w-full hover:bg-primary-600 transition">
         Buy Now {course.price}
       </button>
     </div>

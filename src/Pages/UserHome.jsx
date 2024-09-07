@@ -3,6 +3,9 @@ import CourseCard from "../Components/CourseCard";
 import CourseDetailsPage from "./CourseDetailsPage";
 import StudentDetails from "../Components/StudentDetails";
 import CourseDetailsInstructor from "./CourseDetailsInstructor";
+import Quiz from "../Components/Quiz";
+import QuizPage from "./QuizPage";
+import BeforeQuizPage from "./BeforeQuizPage";
 
 const UserHome = () => {
   const course = {
@@ -82,6 +85,7 @@ const UserHome = () => {
       <CourseDetailsPage course={course} />
       <StudentDetails student={studentData} family={familyData} />
       <CourseDetailsInstructor course={course} />
+      <BeforeQuizPage/>
     </div>
   );
 };

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
 import { RiListSettingsFill } from "react-icons/ri";
-import { FaRobot } from "react-icons/fa";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -13,8 +12,8 @@ const Navbar = () => {
   };
   const auth = true;
   const handleLoginNavigate = () => {
-    navigate('/auth')
-  }
+    navigate("/auth");
+  };
 
   return (
     <>
@@ -28,18 +27,17 @@ const Navbar = () => {
               <li className="text-white text-base">
                 <Link to="/">Home</Link>
               </li>
-              <li className="text-primary-200 text-base">
-                <Link to="/chat" className="flex items-center gap-2">
-                  Chat <FaRobot className="text-lg" />
-                </Link>
+              <li className="text-white text-base">
+                <Link to="/">Online Chat</Link>
               </li>
             </ul>
           </div>
         </div>
         {auth && (
           <button
-          onClick={handleLoginNavigate}
-          className="px-5 py-3 text-white bg-secondary-700 rounded-md text-sm font-medium">
+            onClick={handleLoginNavigate}
+            className="px-5 py-3 text-white bg-secondary-700 rounded-md text-sm font-medium"
+          >
             Login
           </button>
         )}
@@ -60,10 +58,8 @@ const MobileNav = () => (
       <li className="text-white text-base">
         <Link to="/">Home</Link>
       </li>
-      <li className="text-primary-200 text-base">
-        <Link to="/chat" className="flex items-center gap-2">
-          Chat <FaRobot className="text-lg" />
-        </Link>
+      <li className="text-white text-base">
+        <Link to="/">Online Chat</Link>
       </li>
     </ul>
   </nav>
