@@ -33,7 +33,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        {auth && (
+        {!auth && (
           <button
             onClick={handleLoginNavigate}
             className="px-5 py-3 text-white bg-secondary-700 rounded-md text-sm font-medium"
