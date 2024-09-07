@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import Card from "../Components/card";
 const GlobalLayout = () => {
   return (
-    <div></div>
-  )
+    <div>
+      <Card />
+    </div>
+  );
 }
 
 export default GlobalLayout
