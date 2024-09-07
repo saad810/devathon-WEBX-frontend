@@ -2,6 +2,7 @@ import React from "react";
 import CourseCard from "../Components/CourseCard";
 import CourseDetailsPage from "./CourseDetailsPage";
 import StudentDetails from "../Components/StudentDetails";
+import CourseDetailsInstructor from "./CourseDetailsInstructor";
 
 const UserHome = () => {
   const course = {
@@ -80,6 +81,7 @@ const UserHome = () => {
       {/* <CourseCard /> */}
       <CourseDetailsPage course={course} />
       <StudentDetails student={studentData} family={familyData} />
+      <CourseDetailsInstructor course={course} />
     </div>
   );
 };
