@@ -1,8 +1,11 @@
 import React from 'react'
+import UserNavbar from '../components/navbar/userNavbar'
 
 const GlobalLayout = () => {
   return (
-    <div></div>
+    <div>
+      <UserNavbar/>
+    </div>
   )
 }
 
