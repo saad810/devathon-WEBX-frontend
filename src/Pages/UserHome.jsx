@@ -1,6 +1,7 @@
 import React from "react";
 import CourseCard from "../Components/CourseCard";
 import CourseDetailsPage from "./CourseDetailsPage";
+import StudentDetails from "../Components/StudentDetails";
 
 const UserHome = () => {
   const course = {
@@ -26,30 +27,59 @@ const UserHome = () => {
     features: [
       {
         heading: "Comprehensive Coverage",
-        details: "Covers all the basics of React, including components, state, and props."
+        details:
+          "Covers all the basics of React, including components, state, and props.",
       },
       {
         heading: "Hands-on Projects",
-        details: "Includes real-world projects to help you practice and solidify your skills."
+        details:
+          "Includes real-world projects to help you practice and solidify your skills.",
       },
       {
         heading: "Expert Instructor",
-        details: "Taught by an industry expert with years of experience in React."
+        details:
+          "Taught by an industry expert with years of experience in React.",
       },
       {
         heading: "Lifetime Access",
-        details: "Get lifetime access to course materials, so you can revisit the content anytime."
+        details:
+          "Get lifetime access to course materials, so you can revisit the content anytime.",
       },
       {
         heading: "Certificate of Completion",
-        details: "Receive a certificate after completing the course, validating your skills."
+        details:
+          "Receive a certificate after completing the course, validating your skills.",
       },
     ],
   };
+
+  const studentData = {
+    id: "123456",
+    gender: "Male",
+    cnic: "12345-6789012-3",
+    phone: "+92-300-1234567",
+    address: "123 Street, City",
+    dob: "2000-01-01",
+    qualification: "Bachelor's of Computer Science",
+    permanentAddress: "456 Avenue, City",
+  };
+
+  const familyData = {
+    fatherName: "John Doe",
+    fatherCnic: "12345-6789012-3",
+    fatherPhone: "+92-300-7654321",
+    fatherJobTitle: "Engineer",
+    fatherJobType: "Full-time",
+    motherName: "Jane Doe",
+    motherCnic: "12345-6789012-4",
+    motherPhone: "+92-300-9876543",
+  };
+
   return (
     <div>
       {/* <CourseCard /> */}
       <CourseDetailsPage course={course} />
+      <StudentDetails student={studentData} family={familyData} />
     </div>
   );
 };
