@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { RiListSettingsFill } from "react-icons/ri";
 import { FaRobot } from "react-icons/fa";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   const toggleMobileNav = () => {
     setShowMobileNav(!showMobileNav);
   };
+  const auth = true;
+  const handleLoginNavigate = () => {
+    navigate('/auth')
+  }
 
   return (
     <>
@@ -31,6 +36,14 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+        {auth && (
+          <button
+          onClick={handleLoginNavigate}
+          className="px-5 py-3 text-white bg-secondary-700 rounded-md text-sm font-medium">
+            Login
+          </button>
+        )}
+
         <button onClick={toggleMobileNav} className="block lg:hidden">
           <RiListSettingsFill className="text-2xl text-primaryblue-100" />
         </button>

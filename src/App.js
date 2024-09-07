@@ -8,13 +8,15 @@ const App = () => {
   return (
     <Routes>
       <Route>
-        <Route path="/" element={<UserHome />} />
         <Route element={<AuthLayout />}>
           <Route path="/auth" element={<Auth />} />
         </Route>
-        <Route path="/user" element={<h1>UserHome</h1>} />
-        <Route path="/instructor" element={<h1>Teacher Home</h1>} />
-        <Route path="*" element={<h1>Not Found</h1>} />
+        <Route element={<GlobalLayout />}>
+          <Route path="/" element={<UserHome />} />
+          <Route path="/user" element={<h1>UserHome</h1>} />
+          <Route path="/instructor" element={<h1>Teacher Home</h1>} />
+          <Route path="*" element={<h1>Not Found</h1>} />
+        </Route>
       </Route>
     </Routes>
   );
